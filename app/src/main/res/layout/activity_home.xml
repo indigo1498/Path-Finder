@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:padding="0dp"
+    app:layout_marginBaseline="0dp">
+
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background1" />
+
+
+    <Button
+        android:id="@+id/obstacledetection"
+        android:layout_width="281dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="Obstacle Detection"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/invisibleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/app_name"
+        android:onClick="onInvisibleButtonClick" />
+
+
+    <Button
+        android:id="@+id/objectdetection"
+        android:layout_width="281dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/obstacledetection"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="63dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="Object Detection"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>
